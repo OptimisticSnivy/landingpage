@@ -1,12 +1,20 @@
+import "./globals.css";
+import Nav from "@/components/ui/navbar";
+import localFont from 'next/font/local'
 import type { Metadata } from "next";
 import ModeToggle from '@/components/ui/darkmodeToggle'
-import { ThemeProvider } from "@/components/theme-provider"
-import { Inconsolata } from "next/font/google";
-import "./globals.css";
 
-const inconsolata = Inconsolata({
-	variable: "--font-inconsolata",
-	style: "normal"
+const regularIosevka = localFont({
+	src: [
+		{
+			path: "./fonts/IosevkaNerdFontMono-Regular.ttf",
+			style: "normal"
+		},
+		{
+			path: "./fonts/IosevkaNerdFontMono-Italic.ttf",
+			style: "italic"
+		},
+	]
 })
 
 export const metadata: Metadata = {
@@ -22,17 +30,10 @@ export default function RootLayout({
 	return (
 		<html lang="en" suppressHydrationWarning>
 			<body
-				className={`${inconsolata.variable} ${inconsolata.variable} antialiased`}
+				className={`${regularIosevka.className} antialiased`}
 			>
-				{/* <ModeToggle></ModeToggle> */}
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="system"
-					enableSystem
-					disableTransitionOnChange
-				>
-					{children}
-				</ThemeProvider>
+				<Nav></Nav>
+				{children}
 			</body>
 		</html>
 	);
