@@ -2,7 +2,6 @@ import "./globals.css";
 import Nav from "@/components/ui/navbar";
 import localFont from 'next/font/local'
 import type { Metadata } from "next";
-import ModeToggle from '@/components/ui/darkmodeToggle'
 
 const regularIosevka = localFont({
 	src: [
