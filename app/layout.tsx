@@ -1,20 +1,7 @@
 import "./globals.css";
 import Nav from "@/components/ui/navbar";
-import localFont from 'next/font/local'
+import { regularIosevka } from "./fonts"
 import type { Metadata } from "next";
-
-const regularIosevka = localFont({
-	src: [
-		{
-			path: "./fonts/IosevkaNerdFontMono-Regular.ttf",
-			style: "normal"
-		},
-		{
-			path: "./fonts/IosevkaNerdFontMono-Italic.ttf",
-			style: "italic"
-		},
-	]
-})
 
 export const metadata: Metadata = {
 	title: "Create Next App",
