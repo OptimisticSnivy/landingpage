@@ -1,5 +1,11 @@
 import Link from 'next/link'
+import { herbert } from '../fonts'
 
 export default function Page() {
-	// return <p className=" flex flex-row m-10 text-[20px] text-[#ebc06d] font-regular italic text-lg">hello from contact</p>
+	return (
+		<div className="flex flex-col text-[#ebc06d] font-regular mt-10 w-2xl mx-auto">
+			<h1 className={`${herbert.className} text-xl`}> Email </h1>
+			<h1 className={`${herbert.className} text-xl`}> Discord </h1>
+		</div>
+	)
 }
