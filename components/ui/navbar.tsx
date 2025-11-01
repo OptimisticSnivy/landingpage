@@ -7,7 +7,6 @@ export default function Nav() {
 				<div className="flex flex-row">
 					<h1 className="mr-3"><Link className="hover:text-[#7f91b2]" href="/">home</Link></h1>
 					<h1 className="mr-3"><Link className="hover:text-[#7f91b2]" href="/blog">blog</Link></h1>
-					<h1 className="mr-3"><Link className="hover:text-[#7f91b2]" href="/about">about</Link></h1>
 					<h1 className="mr-3"><Link className="hover:text-[#7f91b2]" href="/contact">contact</Link></h1>
 				</div>
 			</div>
