@@ -1,5 +1,5 @@
 import { herbert } from "../fonts"
-import Welcome from "./../content/posts/welcome.md"
+import Welcome from "./../content/posts/welcome.mdx"
 
 export default function Page() {
 	return (
