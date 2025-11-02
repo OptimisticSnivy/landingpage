@@ -1,8 +1,17 @@
+import createMDX from '@next/mdx'
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-  reactCompiler: true,
+	/* config options here */
+	reactCompiler: true,
+	pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
 };
+const withMDX = createMDX({
+	// Add markdown plugins here, as desired
+	extension: /\.(md|mdx)$/,
+	options: {
+		remarkPlugins: [["remark-gfm", { strict: true, throwOnError: true }]],
+	},
+})
 
-export default nextConfig;
+export default withMDX(nextConfig);
