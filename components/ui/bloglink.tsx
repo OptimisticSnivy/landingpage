@@ -3,7 +3,7 @@ import fs from "node:fs"
 import matter from "gray-matter"
 import { herbert } from "../../app/fonts"
 
-export function generateSlug(title: string) {
+function generateSlug(title: string) {
 	const slug = title
 		.toLowerCase()             // Convert to lowercase
 		.replace(/[^\w\s-]/g, '')  // Remove non-word characters except spaces and hyphens
@@ -12,6 +12,7 @@ export function generateSlug(title: string) {
 		.slice(0, 50);             // Limit to 50 characters
 	return slug;
 }
+
 export default function Bloglink({ post }: { post: string }) {
 	const str = fs.readFileSync(`/Users/anandmahamuni/workspace/landingpage/app/content/posts/${post}`, 'utf8');
 	const metadata = matter(str).data;
