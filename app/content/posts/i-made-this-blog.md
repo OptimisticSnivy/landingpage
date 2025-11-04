@@ -1,14 +1,15 @@
 ---
-title: I hate VsCode
+title: I made this Blog!
 date: 22nd November, 2025
-slug: home
+slug: i-made-this-blog
 ---
-import MdxLayout from '../../../components/mdx-layout'
  
-# **I hate VsCode**
+# **I made this Blog!**
  
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat auctor mauris vitae mollis. Aliquam erat volutpat. Cras mollis diam in tellus posuere, a malesuada neque molestie. Sed lorem nibh, imperdiet a lobortis nec, tempor sit amet urna. Suspendisse tempus nunc a lobortis pulvinar. Fusce eget metus in nisi accumsan fermentum a eu orci. Proin finibus ipsum eget dictum porttitor. Phasellus posuere pulvinar libero, ut vulputate mauris commodo molestie. Curabitur nec risus luctus, feugiat neque et, vestibulum lorem. Proin id facilisis lectus.
 
+
+# **How I made this Blog?**
 
 Curabitur porta aliquam venenatis. Vestibulum consectetur tempus quam sed rutrum. Vestibulum ac velit et leo efficitur ullamcorper. Nam eget neque vehicula, elementum libero eu, viverra eros. Fusce eleifend posuere massa, et venenatis orci commodo egestas. Cras elementum ut enim a pulvinar. Praesent scelerisque egestas accumsan. Donec at diam diam. Suspendisse vehicula, nisl quis elementum semper, lorem dolor pharetra dolor, sit amet tempus dolor eros at velit. Pellentesque hendrerit, risus et dictum blandit, lorem risus porta dolor, id laoreet arcu arcu sit amet libero. Maecenas faucibus, orci sit amet sollicitudin tincidunt, ante mauris interdum velit, vitae lobortis elit lectus sit amet libero.
 
