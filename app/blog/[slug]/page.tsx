@@ -16,7 +16,7 @@ export default function Page() {
 		<div className="flex flex-col text-[#ebc06d] font-regular mt-10 w-2xl mx-auto">
 			<h1 className={`${herbert.className} text-xl`}>{metadata.title}</h1>
 			<div>{metadata.date}</div>
-			<div className="prose mt-5 mx-auto"><Markdown remarkPlugins={[remarkGfm]}
+			<div className="markdown mt-5 mx-auto"><Markdown remarkPlugins={[remarkGfm]}
 			>{markdown}</Markdown></div>
 		</div>
 	);
