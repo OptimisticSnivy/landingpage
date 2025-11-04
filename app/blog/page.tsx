@@ -5,8 +5,8 @@ import Bloglink from "@/components/ui/bloglink"
 export default function Page() {
 	return (
 		<div>
-			<Bloglink post="welcome.mdx" />
-			<Bloglink post="test-1.mdx" />
+			<Bloglink post="welcome.md" />
+			<Bloglink post="test-1.md" />
 		</div>
 	)
 }

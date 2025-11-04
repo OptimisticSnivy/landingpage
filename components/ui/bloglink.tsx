@@ -3,7 +3,7 @@ import fs from "node:fs"
 import matter from "gray-matter"
 import { herbert } from "../../app/fonts"
 
-function generateSlug(title: string) {
+export function generateSlug(title: string) {
 	const slug = title
 		.toLowerCase()             // Convert to lowercase
 		.replace(/[^\w\s-]/g, '')  // Remove non-word characters except spaces and hyphens
