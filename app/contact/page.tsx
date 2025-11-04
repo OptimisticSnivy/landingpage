@@ -4,8 +4,10 @@ import { herbert } from '../fonts'
 export default function Page() {
 	return (
 		<div className="flex flex-col text-[#ebc06d] font-regular mt-10 w-2xl mx-auto">
-			<h1 className={`${herbert.className} text-xl`}> Email </h1>
-			<h1 className={`${herbert.className} text-xl`}> Discord </h1>
-		</div>
+			<Link href="mailto:optimisticsnivy7203@proton.me" className="hover:text-[#78997a]">
+				<h1 className={`${herbert.className} text-xl`}>Email</h1>
+				<div className='italic'>optimisticsnivy7203@proton.me</div>
+			</Link>
+		</div >
 	)
 }
