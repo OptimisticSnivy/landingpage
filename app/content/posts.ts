@@ -1,9 +1,11 @@
 import matter from "gray-matter"
+import path from "node:path"
 import { readdirSync, readFileSync } from "node:fs"
 
 export function getPosts(): any {
 	let allMetadata: any = {};
-	let root = `/users/anandmahamuni/workspace/landingpage/app/content/posts/`
+	let root = path.join(process.cwd(), "app/content/posts/")
+	console.log(root);
 	const postFiles = readdirSync(root);
 	for (let i in postFiles) {
 		const str = readFileSync(`${root}/${postFiles[i]}`, 'utf8');
@@ -13,3 +15,4 @@ export function getPosts(): any {
 	}
 	return allMetadata;
 }
+console.log(getPosts());

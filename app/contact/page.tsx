@@ -8,6 +8,10 @@ export default function Page() {
 				<h1 className={`${herbert.className} text-xl`}>Email</h1>
 				<div className='italic'>optimisticsnivy7203@proton.me</div>
 			</Link>
+			<Link href="https://github.com/OptimisticSnivy/landingpage/issues" className="hover:text-[#78997a] mt-3">
+				<h1 className={`${herbert.className} text-xl`}>Spot a problem with this site?</h1>
+				<div className='italic'>File an issue on the repo here!</div>
+			</Link>
 		</div >
 	)
 }
