@@ -5,7 +5,7 @@ import { herbert } from "./fonts";
 export default function Home() {
 	return (
 		<div >
-			<div className="flex flex-col text-[#ebc06d] font-regular mt-10 w-2xl mx-auto">
+			<div className="md:p-0 p-4 flex flex-col text-[#ebc06d] font-regular mt-10 w-2xl mx-auto">
 				<h1 className={`${herbert.className} text-xl`}> Anand Mahamuni</h1>
 				<Linkbar />
 				<h2 className="italic text-base"> Full-Stack Developer</h2>
